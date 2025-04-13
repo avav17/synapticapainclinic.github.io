@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Trigger rebuild -->
 <html lang="mr">
 <head>
   <meta charset="UTF-8" />
@@ -31,9 +30,11 @@
     "medicalSpecialty": "PainManagement",
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Bibvewadi",
+      "addressRegion": "Maharashtra",
       "addressCountry": "IN"
     },
-    "url": "https://yourdomain.com"
+    "url": "https://www.synapticapainclinic.com/"
   }
   </script>
 
@@ -64,17 +65,10 @@
     }
 
     .highlight {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #ffde59;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      margin-bottom: 1.5rem;
-      animation: blink 1.2s infinite alternate;
-    }
-
-    @keyframes blink {
-      from { opacity: 0.7; transform: scale(1); }
-      to { opacity: 1; transform: scale(1.05); }
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #ccc;
+      margin-bottom: 1.2rem;
     }
 
     .clinic-names {
@@ -100,6 +94,16 @@
       font-size: 1rem;
       margin-bottom: 1.5rem;
       opacity: 0.9;
+    }
+
+    .location-info {
+      margin-top: 1.5rem;
+      max-width: 600px;
+    }
+
+    .location-info p {
+      font-size: 1rem;
+      opacity: 0.85;
     }
 
     .countdown {
@@ -157,10 +161,6 @@
       .clinic-names {
         flex-direction: column;
       }
-
-      .highlight {
-        font-size: 2rem;
-      }
     }
 
     @keyframes fadeIn {
@@ -186,6 +186,14 @@
       <h2 style="font-size: 1.1rem;">आधुनिक वेदना निवारण आणि शस्त्रक्रियेविना उपचार</h2>
       <p class="tagline">शस्त्रक्रियेविना वेदना निवारण!</p>
     </div>
+  </div>
+
+  <!-- Location Info -->
+  <div class="location-info">
+    <p>
+      📍 Located in <strong>Bibvewadi, Pune</strong><br />
+      Conveniently accessible from <strong>Satara Road, Swargate, Mukund Nagar, Padmavati, Sahakar Nagar</strong> and surrounding areas.
+    </p>
   </div>
 
   <!-- Treatments -->
