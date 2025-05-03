@@ -171,9 +171,7 @@ html, body {
 </head>
 
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
-  <!-- Highlighted Coming Soon -->
-  <div class="highlight">🚧 COMING SOON / लवकरच सुरु होत आहे 🚧</div>
-
+  
   <!-- Clinic Names -->
   <div class="clinic-names">
     <div>
@@ -220,57 +218,6 @@ html, body {
     </div>
   </div>
 
-  <!-- Countdown -->
-  <div class="countdown">
-    <div>
-      <span id="days">00</span>
-      <div class="label">Days</div>
-    </div>
-    <div>
-      <span id="hours">00</span>
-      <div class="label">Hours</div>
-    </div>
-    <div>
-      <span id="minutes">00</span>
-      <div class="label">Minutes</div>
-    </div>
-    <div>
-      <span id="seconds">00</span>
-      <div class="label">Seconds</div>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    document.addEventListener('keydown', function (e) {
-      if ((e.ctrlKey && ['u', 's', 'c', 'a'].includes(e.key.toLowerCase())) || e.key === 'F12') {
-        e.preventDefault();
-      }
-    });
-    
-    const launchDate = new Date("May 1, 2025 17:00:00").getTime();
-
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = launchDate - now;
-
-      if (distance < 0) {
-        clearInterval(timer);
-        document.querySelector('.countdown').innerHTML = "<p>🎉 We're Live!</p>";
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("days").innerText = String(days).padStart(2, '0');
-      document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-      document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-      document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
-    }, 1000);
-  </script>
-
+ 
 </body>
 </html>
