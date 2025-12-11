@@ -1,244 +1,424 @@
 <!DOCTYPE html>
-<html lang="mr">
-
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Synaptica Pain Clinic | Dr. Kanchan Godase - Spine,Joint & Nerve Pain Specialist in Pune| Advanced Non-Surgical Pain Treatments </title>
-
-    <!-- ✅ SEO Meta Tags -->
-    <meta name="description" content="Synaptica Pain Clinic - Advanced Pain Relief Without Surgery. Modern treatment for headache, migraine, neck pain, shoulder pain, back pain, sciatica, knee pain, ankle pain heel pain, diabetic neuropathy, cancer pain and more">
-    <meta name="keywords" content="Synaptica Pain Clinic, Pain Relief, Non-Surgical Treatment, Sciatica, Slip Disc, Migraine, Headache, Knee Pain, Back Pain, Sports Injury">
-    <meta name="author" content="Synaptica Pain Clinic">
-
-    <!-- ✅ Open Graph for Social Sharing -->
-    <meta property="og:title" content="Synaptica Pain Clinic - Advanced Non-Surgical Pain Treatment" />
-    <meta property="og:description" content="Specializing in pain relief without surgery. Expert doctor treatments for headache, migraine, neck pain, shoulder pain, back pain, sciatica, knee pain, ankle pain heel pain, diabetic neuropathy, cancer pain and more" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_IN" />
-
-    <!-- ✅ Allow search engine indexing -->
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-
-    <!-- ✅ JSON-LD Schema Markup -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "MedicalClinic",
-            "name": "Synaptica Pain Clinic",
-            "description": "Specializing in pain relief without surgery. Expert doctor treatments for headache, migraine, neck pain, shoulder pain, back pain, sciatica, knee pain, ankle pain heel pain, diabetic neuropathy, cancer pain.",
-            "medicalSpecialty": "PainManagement",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Pune",
-                "addressRegion": "Maharashtra",
-                "addressCountry": "IN"
-            },
-            "url": "https://www.synapticapainclinic.com/"
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Synaptica Superspeciality Pain Clinic Pune Dr. Kanchan Godase - Spine,Joint &amp; Nerve Pain Specialist in Pune| Advanced Non-Surgical Pain Treatments</title>
+    <meta name="description" content="Leading Pain Clinic in Pune & PCMC. We provide advanced non-surgical treatments for Back Pain, Knee Pain, Sciatica, and Migraines using PRP, Ozone Therapy, and more.">
+    <meta name="keywords" content="Pain Clinic Pune, Back Pain Treatment Pune, Sciatica Specialist, PRP Therapy Pune, Non-surgical spine treatment">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            box-sizing: border-box;
+        [x-cloak] { display: none !important; }
+        .hero-bg {
+            /* RESTORED WORKING IMAGE URL */
+            background: linear-gradient(rgba(0, 59, 112, 0.85), rgba(0, 59, 112, 0.7)), url('https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
         }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef, #dee2e6);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #000;
-            user-select: none;
-            -webkit-user-drag: none;
-            overflow-x: hidden;
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
         }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 2rem;
-            text-align: center;
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
         }
-
-        .highlight {
-            font-size: 1.2rem;
-            font-weight: normal;
-            color: #ccc;
-            margin-bottom: 1.2rem;
+        ::-webkit-scrollbar-thumb {
+            background: #2563eb; 
+            border-radius: 5px;
         }
-
-        .clinic-names {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .clinic-names div {
-            max-width: 400px;
-        }
-
-        h1,
-        h2 {
-            margin: 0.5rem 0;
-            animation: fadeIn 1s ease-out;
-        }
-
-        .tagline {
-            font-style: italic;
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.9;
-        }
-
-        .location-info {
-            margin-top: 1.5rem;
-            max-width: 600px;
-        }
-
-        .location-info p {
-            font-size: 1rem;
-            opacity: 0.85;
-        }
-
-        .countdown {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        .countdown div {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 1rem;
-            border-radius: 10px;
-            min-width: 70px;
-        }
-
-        .countdown span {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .label {
-            font-size: 0.75rem;
-            opacity: 0.6;
-        }
-
-        .treatment-section {
-            margin-top: 2rem;
-            max-width: 1000px;
-        }
-
-        .treatment-section h2 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
-        .treatments {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            text-align: left;
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-
-        .treatments ul {
-            list-style: disc;
-            padding-left: 1.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .clinic-names {
-                flex-direction: column;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1e40af; 
         }
     </style>
 </head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" class="font-sans text-gray-800 bg-gray-50" x-data="clinicData()">
 
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <!-- Option 1: Original Style -->
+                    <!-- <a href="#" class="text-2xl font-bold text-blue-900 flex items-center"> -->
+                    <!--     <i class="fa-solid fa-user-doctor mr-2 text-blue-600"></i>Synaptica Pain Clinic -->
+                    <!-- </a> -->
 
-    <!-- Clinic Names -->
-    <div class="clinic-names">
-        <div>
-            <h1 style="font-size: 2.5rem;">Synaptica Pain Clinic</h1>
-            <h2 style="font-size: 1.2rem;">Advanced Pain Relief & Non-Surgical Treatment</h2>
-            <p class="tagline">Pain Relief Without Surgery!</p>
+                    <!-- Option 2: Gradient Effect -->
+                    <!-- <a href="#" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent flex items-center"> -->
+                    <!--     <i class="fa-solid fa-user-doctor mr-2 text-blue-600"></i>Synaptica Pain Clinic -->
+                    <!-- </a> -->
+
+                    <!-- Option 3: Custom Font -->
+                    <a href="#" class="text-2xl font-bold font-[Yeseva One] text-blue-900 flex items-center">
+                        <!-- <i class="fa-solid fa-user-doctor mr-2 text-blue-600"></i> --> Synaptica Pain Clinic
+                    </a>
+
+                    <!-- Option 4: Text Shadow -->
+                    <!-- <a href="#" class="text-2xl font-bold text-blue-900 flex items-center drop-shadow-lg"> -->
+                    <!--     <i class="fa-solid fa-user-doctor mr-2 text-blue-600"></i>Synaptica Pain Clinic -->
+                    <!-- </a> -->
+
+                    <!-- Option 5: Combined Effects -->
+                    <!-- <a href="#" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent flex items-center drop-shadow-lg font-playfair"> -->
+                    <!--     <i class="fa-solid fa-user-doctor mr-2 text-blue-600"></i>Synaptica Pain Clinic -->
+                    <!-- </a> -->
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <a href="#conditions" class="text-gray-700 hover:text-blue-600 font-medium transition">Conditions</a>
+                    <a href="#treatments" class="text-gray-700 hover:text-blue-600 font-medium transition">Treatments</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition">About</a>
+                    <a href="#contact" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow-lg transform hover:-translate-y-0.5">Call Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button @click="mobileMenu = !mobileMenu" class="text-gray-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div>
-            <h1 style="font-size: 2.2rem;">सिनॅप्टीका पेन क्लिनिक</h1>
-            <h2 style="font-size: 1.1rem;">आधुनिक वेदना निवारण आणि शस्त्रक्रियेविना उपचार</h2>
-            <p class="tagline">शस्त्रक्रियेविना वेदना निवारण!</p>
+        <div x-show="mobileMenu" x-cloak class="md:hidden bg-white border-t shadow-lg absolute w-full">
+            <a href="#home" @click="mobileMenu = false" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">Home</a>
+            <a href="#conditions" @click="mobileMenu = false" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">Conditions</a>
+            <a href="#treatments" @click="mobileMenu = false" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">Treatments</a>
+            <a href="#about" @click="mobileMenu = false" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 border-b">About</a>
+            <a href="#contact" @click="mobileMenu = false" class="block px-4 py-3 text-blue-600 font-bold hover:bg-gray-100">Call Now</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl text-white animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">Life Should Be <span class="text-blue-300">Pain Free.</span></h1>
+            <p class="text-xl md:text-2xl mb-8 font-light text-gray-100 drop-shadow-md">Advanced Non-Surgical Pain Management solutions in Pune. We treat the cause, not just the symptoms.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:7559299950" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-bold text-lg transition shadow-xl transform hover:scale-105 flex items-center justify-center">
+                    <i class="fa-solid fa-phone mr-2"></i> Call Now
+                </a>
+                <a href="#conditions" class="px-8 py-4 bg-white hover:bg-gray-100 rounded-lg text-blue-900 font-bold text-lg transition shadow-xl transform hover:scale-105 flex items-center justify-center">
+                    Explore Conditions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="conditions" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Conditions We Treat</h2>
+                <p class="mt-4 text-xl text-gray-600">Comprehensive care for pain from Head to Toe.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <template x-for="item in conditions" :key="item.name">
+                    <div @click="openCondition(item)" class="bg-white rounded-xl shadow-md hover:shadow-2xl transition duration-300 cursor-pointer overflow-hidden group border border-gray-100 flex flex-col h-full transform hover:-translate-y-2">
+                        <div class="h-48 overflow-hidden relative">
+                            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition z-10"></div>
+                            <img :src="item.image" :alt="item.name" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition" x-text="item.name"></h3>
+                            <p class="text-sm text-gray-500 mt-2 flex items-center">Learn more <i class="fa-solid fa-arrow-right ml-2 text-blue-500 text-xs"></i></p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <section id="treatments" class="py-20 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">Our Treatments</h2>
+                <p class="mt-4 text-xl text-blue-200">Advanced Technology. Proven Results.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <template x-for="therapy in treatments" :key="therapy.name">
+                    <div @click="openTreatment(therapy)" class="bg-blue-800 hover:bg-blue-700 p-5 rounded-xl cursor-pointer transition duration-300 flex items-center justify-between border border-blue-700 shadow-lg group hover:border-blue-400">
+                        <span class="font-medium text-lg" x-text="therapy.name"></span>
+                        <i class="fa-solid fa-plus-circle text-blue-400 group-hover:text-white transition text-xl"></i>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full z-0"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-50 rounded-full z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1000&auto=format&fit=crop" alt="Doctor consulting patient" class="relative z-10 rounded-2xl shadow-2xl w-full object-cover h-[400px]">
+                </div>
+                <div>
+                    <h2 class="text-blue-600 font-bold tracking-wide uppercase text-sm mb-2">About Us</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Advanced Non-Surgical Pain Treatments in Pune</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-lg">
+                        Welcome to Pune's premier Pain Clinic. We strive to ensure patients become pain-free with <strong>no surgical solutions</strong> for various conditions ranging from head to toe.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our multidisciplinary approach utilizes advanced, sophisticated, and proven safety protocols. Whether you are suffering from chronic back pain or sports injuries, our expert team in Pune and PCMC uses state-of-the-art technology like Image-Guided Procedures and Regenerative Medicine to help you reclaim your life.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700 font-medium"><i class="fa-solid fa-check-circle text-green-500 mr-3 text-xl"></i> Minimally Invasive Procedures</li>
+                        <li class="flex items-center text-gray-700 font-medium"><i class="fa-solid fa-check-circle text-green-500 mr-3 text-xl"></i> No Hospitalization Required</li>
+                        <li class="flex items-center text-gray-700 font-medium"><i class="fa-solid fa-check-circle text-green-500 mr-3 text-xl"></i> Quick Recovery Time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-10 rounded-3xl shadow-inner">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Get in Touch</h2>
+                    <p class="mb-8 text-gray-600 text-lg">Ready to live pain-free? Contact us today to schedule your consultation.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start group cursor-pointer">
+                            <div class="bg-blue-100 p-4 rounded-full text-blue-600 mr-5 group-hover:bg-blue-600 group-hover:text-white transition">
+                                <i class="fa-solid fa-phone text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Phone</h4>
+                                <a href="tel:7559299950" class="text-gray-600 hover:text-blue-600 block text-lg">+91 7559299950</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start group cursor-pointer">
+                            <div class="bg-green-100 p-4 rounded-full text-green-600 mr-5 group-hover:bg-green-600 group-hover:text-white transition">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">WhatsApp</h4>
+                                <a href="https://wa.me/917559299950" class="text-gray-600 hover:text-green-600 block text-lg">Chat on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start group">
+                            <div class="bg-purple-100 p-4 rounded-full text-purple-600 mr-5 group-hover:bg-purple-600 group-hover:text-white transition">
+                                <i class="fa-solid fa-location-dot text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Location</h4>
+                                <p class="text-gray-600">Synaptica Pain Clinic,<br>Office No. 7, New Gajara Society,<br>Near Canara Bank, Bibwewadi,<br>Pune, Maharashtra 411037</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[500px] bg-gray-200 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.276604905719!2d73.86416179999999!3d18.471125899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebd7e5d6b903%3A0x75d9cc2bc3a96489!2sSynaptica%20Pain%20Clinic%20%7C%20An%20Advanced%20Non%20Surgical%20Pain%20Management%20Clinic!5e0!3m2!1sen!2sin!4v1764518502638!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-6">
+                 <span class="text-2xl font-bold text-white">Synaptica Pain Clinic</span>
+            </div>
+            <p class="mb-4 text-sm text-gray-500">© 2025 Synaptica Pain Clinic. All Rights Reserved.</p>
+            <p class="text-xs text-gray-600 max-w-2xl mx-auto">Disclaimer: Results may vary from patient to patient. This information is for educational purposes only and does not constitute medical advice.</p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-[90]">
+        <a href="https://wa.me/917559299950" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-0 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center w-16 h-16 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+        <a href="tel:7559299950" class="bg-blue-600 hover:bg-blue-700 text-white p-0 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center w-16 h-16 animate-bounce border-2 border-white">
+            <i class="fa-solid fa-phone text-2xl"></i>
+        </a>
+    </div>
+
+    <div x-show="activeCondition" x-cloak class="fixed inset-0 z-[100] overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+            <div x-show="activeCondition" class="fixed inset-0 bg-gray-900 bg-opacity-80 transition-opacity backdrop-blur-sm" @click="activeCondition = null" x-transition.opacity></div>
+
+            <div x-show="activeCondition" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" class="inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full">
+                
+                <div class="relative h-56">
+                    <img :src="activeCondition?.image" class="w-full h-full object-cover" alt="">
+                    <button @click="activeCondition = null" class="absolute top-3 right-3 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 w-8 h-8 flex items-center justify-center transition">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="px-6 py-6">
+                    <h3 class="text-2xl leading-6 font-bold text-gray-900 mb-3" id="modal-title" x-text="activeCondition?.name"></h3>
+                    <div class="mt-2">
+                        <p class="text-gray-600 text-base mb-6 leading-relaxed" x-text="activeCondition?.desc"></p>
+                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                            <h4 class="font-bold text-blue-800 text-sm uppercase mb-2">Common Symptoms:</h4>
+                            <ul class="space-y-1">
+                                <template x-for="symptom in activeCondition?.symptoms">
+                                    <li class="text-gray-700 text-sm flex items-start">
+                                        <i class="fa-solid fa-caret-right text-blue-500 mt-1 mr-2"></i>
+                                        <span x-text="symptom"></span>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 sm:flex sm:flex-row-reverse border-t">
+                    <a href="tel:7559299950" class="w-full inline-flex justify-center rounded-lg border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+                        Consult Doctor
+                    </a>
+                    <button type="button" class="mt-3 w-full inline-flex justify-center rounded-lg border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" @click="activeCondition = null">
+                        Close
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Contact Info -->
-    <div class="contact-info">
-        <p>
-        <h2>Call or Whatsapp for Appointments on
-             <a href="tel:7559299950">7559299950</a>
-        </h2>
-        </p>
-    </div>
 
-    
-    <!-- Treatments -->
-    <div class="treatment-section">
-        <h2>We Treat the Following Conditions / आम्ही खालील समस्यांवर उपचार करतो</h2>
-        <div class="treatments">
-            <ul>
-                <li>Headache (डोकेदुखी)</li>
-                <li>Neck Pain (मानदुखी)</li>
-                <li>Back Pain (पाठदुखी)</li>
-                <li>Sciatica (सायटिका)</li>
-            </ul>
-            <ul>
-                <li>Slip Disc (स्लिप डिस्क)</li>
-                <li>Knee Pain (गुडघेदुखी)</li>
-                <li>Shoulder Pain (खांदेदुखी)</li>
-                <li>Diabetic Neuropathy (डायबेटिक न्युरोपॅथी)</li>
-            </ul>
-            <ul>
-                <li>Cancer Pain (कॅन्सरच्या वेदना)</li>
-                <li>Sports Injury (स्पोर्ट्स इंज्युरी)</li>
-                <li>Migraine (मायग्रेन)</li>
-            </ul>
+    <div x-show="activeTreatment" x-cloak class="fixed inset-0 z-[100] overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="fixed inset-0 bg-gray-900 bg-opacity-80 transition-opacity backdrop-blur-sm" @click="activeTreatment = null" x-transition.opacity></div>
+            
+            <div x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" class="bg-white rounded-2xl overflow-hidden shadow-2xl transform transition-all max-w-md w-full relative z-10">
+                <div class="h-48 relative">
+                    <img :src="activeTreatment?.image" class="w-full h-full object-cover" alt="Treatment Image">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <h3 class="absolute bottom-4 left-6 text-2xl font-bold text-white shadow-sm" x-text="activeTreatment?.name"></h3>
+                    <button @click="activeTreatment = null" class="absolute top-3 right-3 bg-white bg-opacity-20 hover:bg-opacity-40 text-white rounded-full p-2 w-8 h-8 flex items-center justify-center transition backdrop-blur-md">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6" x-text="activeTreatment?.info"></p>
+                    <div class="flex gap-3">
+                         <a href="tel:7559299950" class="flex-1 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 text-center font-medium">Book Appt</a>
+                         <button @click="activeTreatment = null" class="flex-1 bg-gray-100 text-gray-800 py-2 rounded-lg hover:bg-gray-200 font-medium">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-<!-- Location Info -->
-    <div class="location-info">
-        <p>
-            📍 Located in <strong> Pune</strong><br />
-            <strong> Shop No 7, New Gajara Society, Near Pushpam Gas Agency and Canara Bank, Bibwewadi Pune.
-        </p>
-       <div style="overflow:hidden;resize:none;max-width:100%;width:720px;height:300px;"><div id="display-google-map" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=synaptica+pain+clinic+pune&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embed-map-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="get-map-data">premium bootstrap themes</a><style>#display-google-map img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
 
-    </div>
+    <script>
+        function clinicData() {
+            // High Quality Unsplash Images (Public URLs)
+            const imgPhysio = "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop";
+            const imgNeedle = "https://images.unsplash.com/photo-1632053003690-991198f19c0c?q=80&w=1000&auto=format&fit=crop"; // Needles/Medical
+            const imgPRP = "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop"; // Lab/Blood
+            const imgCArm = "https://images.unsplash.com/photo-1516549655169-df83a0923896?q=80&w=1000&auto=format&fit=crop"; // Tech/Machines
+            const imgDoctor = "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1000&auto=format&fit=crop"; // Consult
 
+            return {
+                mobileMenu: false,
+                activeCondition: null,
+                activeTreatment: null,
+                
+                openCondition(item) { this.activeCondition = item; },
+                openTreatment(item) { this.activeTreatment = item; },
 
+                // DATA: CONDITIONS
+                conditions: [
+                    { 
+                        name: "Back Pain", 
+                        // Spine Model Image
+                        //image: "https://plus.unsplash.com/premium_photo-1726812095690-996fdfec071f?q=80&w=1000&auto=format&fit=crop",
+			            image: "assets/images/back_pain_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Chronic or acute pain in the upper, middle, or lower back, often caused by muscle strain, disc issues, or posture.", 
+                        symptoms: ["Persistent aching or stiffness", "Sharp, localized pain", "Muscle spasms", "Difficulty standing straight"] 
+                    },
+                    { 
+                        name: "Knee Pain", 
+                        // Knee/Joint Image
+
+                        image: "assets/images/knee_pain_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        //image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Pain affecting the knee joint, often due to osteoarthritis, ligament injuries (ACL/MCL), or meniscus tears.", 
+                        symptoms: ["Swelling and stiffness", "Redness and warmth to the touch", "Popping or crunching noises", "Instability or weakness"] 
+                    },
+                    { 
+                        name: "Sciatica", 
+                        // Spine/Nerve Graphic
+                        image: "assets/images/sciatica_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Pain radiating along the sciatic nerve, which runs down one or both legs from the lower back.", 
+                        symptoms: ["Shooting pain down the leg", "Numbness or tingling", "Weakness in the leg or foot", "Pain worsens when sitting"] 
+                    },
+                    { 
+                        name: "Migraine & Headache", 
+                        // Head Pain
+                        image: "assets/images/headache_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Severe recurring headaches often accompanied by nausea, and sensitivity to light and sound.", 
+                        symptoms: ["Pulsing or throbbing pain", "Sensitivity to light/sound", "Nausea or vomiting", "Visual aura or blurry vision"] 
+                    },
+                    { 
+                        name: "Slip Disc", 
+                        // Spine Detail
+                        image: "assets/images/slip_disc_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "A herniated disc in the spine that presses on nearby nerves, causing pain and discomfort.", 
+                        symptoms: ["Arm or leg pain", "Numbness or tingling", "Muscle weakness", "Pain triggered by specific movements"] 
+                    },
+                    { 
+                        name: "Shoulder Pain", 
+                        // Shoulder/Body
+                        image: "assets/images/shoulder_pain_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Discomfort in the shoulder joint, including frozen shoulder, rotator cuff tears, and tendinitis.", 
+                        symptoms: ["Limited range of motion", "Pain when lifting the arm", "Clicking or popping sensation", "Inability to sleep on the side"] 
+                    },
+                    { 
+                        name: "Trigeminal Neuralgia", 
+                        // Face/Head
+                        image: "assets/images/triageminal_neuralgia_2.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "A chronic pain condition affecting the trigeminal nerve in the face, causing shock-like pain.", 
+                        symptoms: ["Episodes of severe, shooting pain", "Pain triggered by touching the face", "Spontaneous attacks of pain", "Pain focused in cheek/jaw"] 
+                    },
+                    { 
+                        name: "Diabetic Neuropathy", 
+                        // Foot/Leg Exam
+                        image: "assets/images/diabetic_neuropathy_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Nerve damage that can occur if you have diabetes, most often damaging nerves in the legs and feet.", 
+                        symptoms: ["Tingling or burning in hands/feet", "Sharp pains or cramps", "Increased sensitivity to touch", "Loss of reflexes"] 
+                    },
+                    { 
+                        name: "Neck Pain", 
+                        // Neck/Spine
+                        image: "assets/images/neck_pain_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Pain in the cervical spine, often caused by spondylosis, posture issues (text neck), or whiplash.", 
+                        symptoms: ["Stiff neck", "Sharp pain", "Headaches", "Numbness radiating to arms"] 
+                    },
+                    { 
+                        name: "Sports Injuries", 
+                        // Runner/Sport
+                        image: "assets/images/sports_injury_1.jpg?q=80&w=1000&auto=format&fit=crop", 
+                        desc: "Injuries sustained during sports or exercise, including sprains, strains, and fractures.", 
+                        symptoms: ["Sudden severe pain", "Swelling", "Inability to bear weight", "Visible dislocation"] 
+                    }
+                ],
+
+                // DATA: TREATMENTS
+                treatments: [
+                    { name: "Medications", image: imgDoctor, info: "Optimized pharmacological management to reduce inflammation and control pain." },
+                    { name: "Targeted Physiotherapy", image: imgPhysio, info: "Specific exercises designed to strengthen muscles, improve mobility, and correct posture." },
+                    { name: "Dry Needling", image: imgNeedle, info: "A technique using thin needles to release trigger points (knots) in muscles to relieve pain." },
+                    { name: "Prolotherapy", image: imgPRP, info: "Injection therapy that stimulates the body's natural healing mechanism to repair injured tendons and ligaments." },
+                    { name: "Ozone Therapy", image: imgPRP, info: "Using medical-grade ozone gas to reduce inflammation and improve oxygen supply to tissues." },
+                    { name: "PRP Therapy", image: imgPRP, info: "Platelet-Rich Plasma therapy uses your own blood's growth factors to accelerate healing in injured joints." },
+                    { name: "Epidural Steroid Injections", image: imgCArm, info: "Minimally invasive injections delivering powerful anti-inflammatory medication directly to the spinal nerve roots." },
+                    { name: "Radiofrequency Ablation", image: imgCArm, info: "Using heat generated by radio waves to target specific nerves and temporarily turn off their ability to send pain signals." },
+                    { name: "Cooled RF Ablation", image: imgCArm, info: "An advanced version of RFA that uses water-cooled technology to treat larger areas like the knee or hip." },
+                    { name: "Cryotherapy", image: imgCArm, info: "Application of extreme cold to freeze sensory nerves and block pain signals." },
+                    { name: "Nerve Blocks", image: imgPRP, info: "Injection of anesthetic near specific nerves to interrupt pain signals to the brain." },
+                    { name: "Botox Injections", image: imgNeedle, info: "Used for chronic migraines and muscle spasticity to relax muscles and block pain transmission." },
+                    { name: "Spinal Cord Stimulation", image: imgCArm, info: "An implanted device that sends low-level electrical pulses to the spinal cord to mask pain signals." },
+                    { name: "Vertebroplasty / Kyphoplasty", image: imgCArm, info: "Minimally invasive procedures to treat spinal compression fractures by stabilizing the vertebra." },
+                    { name: "Hydrodissection", image: imgPRP, info: "Using fluid pressure to separate nerves from surrounding entrapping tissue to relieve pain." },
+                    { name: "Endoscopic Spine Procedures", image: imgCArm, info: "Least invasive spine surgery using a tiny camera to treat disc herniations." }
+                ]
+            }
+        }
+    </script>
 </body>
-
 </html>
